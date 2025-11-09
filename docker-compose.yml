@@ -9,3 +9,11 @@ services:
     restart: always
     ports:
       - "8003:8003"
+
+  test:
+    build:
+      context: .
+    image: rochel05/concrete_datasource_backend
+    command: python manage.py test
+    depends_on:
+      - concrete_datasource_backend
