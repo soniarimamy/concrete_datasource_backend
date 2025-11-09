@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  concrete_datasource_backend:
+    build:
+      context: .
+    container_name: concrete_datasource_backend
+    image: rochel/concrete_datasource_backend
+    restart: always
+    ports:
+      - "8003:8003"
