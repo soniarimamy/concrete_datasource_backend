@@ -5,7 +5,7 @@ services:
     build:
       context: .
     container_name: concrete_datasource_backend
-    image: rochel/concrete_datasource_backend
+    image: rochel05/concrete_datasource_backend
     restart: always
     ports:
       - "8003:8003"
